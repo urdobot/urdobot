@@ -1,0 +1,11 @@
+[package]
+name = "urdobot"
+version = "0.1.0"
+edition = "2021"
+
+[workspace]
+members = ["urdobot-app"]
+
+[dependencies]
+urdobot-app = { path = "urdobot-app" }
+tokio = { version = "1.35.0", features = ["macros", "rt-multi-thread"] }
